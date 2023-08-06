@@ -45,8 +45,11 @@ function loadUser(){
 }
 
 function displayUser(users){
+    const ul=document.getElementById('users');
     for(const user of users){
-        console.log(user?.address?.city);
+        // console.log(user?.address?.city);
+        const li=document.createElement('li');
+        li.innerText=user.address.city;
+        ul.appendChild(li)
     }
-    
 }
