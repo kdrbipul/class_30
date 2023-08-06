@@ -38,3 +38,15 @@ function loadData(){
     .then(data => console.log(data))
 }
 
+function loadUser(){
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(res => res.json())
+    .then(data => displayUser(data))
+}
+
+function displayUser(users){
+    for(const user of users){
+        console.log(user?.address?.city);
+    }
+    
+}
