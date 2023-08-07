@@ -5,6 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POST API fetch</title>
+    <style>
+        .make-up{
+            background-color: bisque;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            margin-bottom: 1.5rem;
+            border: 2px solid black;
+            text-align: center;
+        }
+        #post{
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 2rem;
+        }
+
+
+        @media only screen and (min-width:1px) and (max-width: 319px) {
+            #post{
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            gap: 2rem;
+        } 
+        .make-up{
+            margin-bottom: 0;
+        }  
+    }
+        @media only screen and (min-width:320px) and (max-width: 480px) {
+            #post{
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            gap: 2rem;
+        }
+        .make-up{
+            margin-bottom: 0;
+        }    
+    }
+
+        @media only screen and (min-width:481px) and (max-width: 768px) {
+            #post{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.5rem;
+        }
+        .make-up{
+            margin-bottom: 0;
+        } 
+    }
+        @media only screen and (min-width:769px) and (max-width: 1024px) {
+            #post{
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 2rem;
+        }
+        .make-up{
+            margin-bottom: 0;
+        } 
+    }
+        @media only screen and (min-width:1025px) and (max-width: 1200px) {
+            #post{
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 2rem;
+        }
+        .make-up{
+            margin-bottom: 0;
+        } 
+    }
+    </style>
 </head>
 <body>
     <h1>Display POST</h1>
